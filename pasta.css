@@ -15,6 +15,11 @@ body{
 
 }
 
+.title{
+  font-size: 50px;
+  color: white;
+}
+
 .heading{ 
    background-color: rgb(222, 172, 122);
   border: 2px solid white;
@@ -33,12 +38,20 @@ body{
   font-family: "Crimson Text", serif;
   font-weight: 600;
   font-style: normal;
+  transition: all 3.0s ease;
   
 }
 
+ /* .lists:hover {
+  
+  transform: translateX(50px);
+
+}  */
+
+
 .container{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr ;
   column-gap: 30px;
 
 }
@@ -46,4 +59,29 @@ body{
 .carousel-item img {
   height: 700px;
   
+}
+
+
+.boxes{
+  height: 350px;
+  width: 350px;
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+  font-size: 25px;
+  background-color: rgb(230, 192, 167);
+  border: 1px solid black;
+}
+
+.container2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 40px;
+
+}
+
+.boxes img{
+  height: 300px;
+  width: 300px;
 }

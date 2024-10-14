@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Gowun+Batang:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Dancing+Script:wght@400..700&family=Gowun+Batang:wght@400;700&display=swap');
 
 body{
  
@@ -15,10 +15,11 @@ body{
 
 }
 
-title{
+.title{
   font-size: 50px;
   color: white;
 }
+
 .heading{ 
    background-color: rgb(222, 172, 122);
   border: 2px solid white;
@@ -34,12 +35,19 @@ title{
   width: 500px;
   font-size: 30px;
   align-items: center; 
-  font-family: "Dancing Script", cursive;
-  font-optical-sizing: auto;
-  font-weight: 500;
+  font-family: "Crimson Text", serif;
+  font-weight: 600;
   font-style: normal;
+  transition: all 3.0s ease;
   
 }
+
+ /* .lists:hover {
+  
+  transform: translateX(50px);
+
+}  */
+
 
 .container{
   display: grid;
@@ -47,3 +55,9 @@ title{
   column-gap: 30px;
 
 }
+
+.carousel-item img {
+  height: 700px;
+  
+}
+
