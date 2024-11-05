@@ -4,31 +4,33 @@
   box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Dancing+Script:wght@400..700&family=Gowun+Batang:wght@400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Updock&display=swap');
 
 body {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.2)),url("https://images.pexels.com/photos/1441122/pexels-photo-1441122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")center center/cover;
+    /* background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.2)),url("https://images.pexels.com/photos/1441122/pexels-photo-1441122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")center center/cover;
     height: 100vh;
-    width: 100%;
+    width: 100%; */
+    background-color: rgb(138, 138, 85);
    
 }
 
 .para{
     font-size: 20px;
     color: white;   
-    font-family: "Crimson Text", serif;
-  font-weight: 600;
-  font-style: normal;
-  font-size: 50px;
-  text-shadow: 2px 4px 2px rgba(0, 0, 0, 0.8);;
+    font-family: "Updock", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    text-shadow: 2px 4px 2px rgba(0, 0, 0, 0.8);;
 }
 
 .heading{
     border: 5px solid palevioletred;
     font-size: 60px;
     border-radius: 10px;
-
+    font-family: "Updock", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .start{
@@ -40,9 +42,10 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-family: "Crimson Text", serif;
-  font-weight: 600;
-  font-style: normal;
+    font-family: "Updock", serif;
+    font-weight: 400;
+    font-style: normal;
+    
 }
 
 .box{
@@ -61,9 +64,7 @@ body {
     margin-left: 30px;
     margin-right: 30px;
     text-align: center;
-    font-family: "IBM Plex Mono", system-ui;
-  font-weight: 600;
-  font-style: normal;
+    
 }
 
 .peach{
@@ -85,10 +86,7 @@ body {
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-    font-family: "IBM Plex Mono", system-ui;
-   font-weight: 600;
-   font-style: normal;
-
+    
   
   
 }
@@ -97,11 +95,25 @@ body {
   height: 600px;
   width: 800px;
  background-color: peachpuff;
-  margin-left: 370px;
-  
+  margin-left: 150px;
+}
+
+.picture{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   
 }
 
+.text{
+  font-size: 50px;
+  color: black;
+  text-shadow: 2px 4px 12px white;
+  font-family: "Updock", serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
 
 
 .image-gallery {
@@ -242,3 +254,235 @@ body {
 }
 
 
+
+
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+a {
+  color: inherit;
+}
+
+body {
+  font: normal 16px/1.5 "Helvetica Neue", sans-serif;
+  
+  color: #fff;
+}
+
+/* .section SECTION
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.section {
+  background: palevioletred;
+  opacity: 0.5;
+  padding: 50px 0;
+}
+
+.section .container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section h1 {
+  font-size: 2.5rem;
+}
+
+.section h2 {
+  font-size: 1.3rem;
+}
+
+/* TIMELINE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.timeline {
+  white-space: nowrap;
+  overflow-x: hidden;
+}
+
+.timeline ol {
+  font-size: 0;
+  width: 100vw;
+  padding: 250px 0;
+  transition: all 1s;
+}
+
+.timeline ol li {
+  position: relative;
+  display: inline-block;
+  list-style-type: none;
+  width: 160px;
+  height: 3px;
+  background: #fff;
+}
+
+.timeline ol li:last-child {
+  width: 280px;
+}
+
+.timeline ol li:not(:first-child) {
+  margin-left: 14px;
+}
+
+.timeline ol li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 1px);
+  bottom: 0;
+  width: 12px;
+  height: 12px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  
+}
+
+.timeline ol li div {
+  position: absolute;
+  left: calc(100% + 7px);
+  width: 280px;
+  padding: 15px;
+  font-size: 1rem;
+  white-space: normal;
+  color: black;
+  background: white;
+}
+
+.timeline ol li div::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.timeline ol li:nth-child(odd) div {
+  top: -16px;
+  transform: translateY(-100%);
+}
+
+.timeline ol li:nth-child(odd) div::before {
+  top: 100%;
+  border-width: 8px 8px 0 0;
+  border-color: white transparent transparent transparent;
+}
+
+.timeline ol li:nth-child(even) div {
+  top: calc(100% + 16px);
+}
+
+.timeline ol li:nth-child(even) div::before {
+  top: -8px;
+  border-width: 8px 0 0 8px;
+  border-color: transparent transparent transparent white;
+}
+
+.timeline time {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+/* TIMELINE ARROWS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.timeline .arrows {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.timeline .arrows .arrow__prev {
+  margin-right: 20px;
+}
+
+.timeline .disabled {
+  opacity: 0.5;
+}
+
+.timeline .arrows img {
+  width: 45px;
+  height: 45px;
+}
+
+/* GENERAL MEDIA QUERIES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media screen and (max-width: 599px) {
+  .timeline ol,
+  .timeline ol li {
+    width: auto;
+  }
+
+  .timeline ol {
+    padding: 0;
+    transform: none !important;
+  }
+
+  .timeline ol li {
+    display: block;
+    height: auto;
+    background: transparent;
+  }
+
+  .timeline ol li:first-child {
+    margin-top: 25px;
+  }
+
+  .timeline ol li:not(:first-child) {
+    margin-left: auto;
+  }
+
+  .timeline ol li div {
+    position: static;
+    width: 94%;
+    height: auto !important;
+    margin: 0 auto 25px;
+  }
+
+  .timeline ol li:nth-child(odd) div {
+    transform: none;
+  }
+
+  .timeline ol li:nth-child(odd) div::before,
+  .timeline ol li:nth-child(even) div::before {
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    border: none;
+    border-left: 1px solid white;
+    height: 25px;
+  }
+
+  .timeline ol li:last-child,
+  .timeline ol li:nth-last-child(2) div::before,
+  .timeline ol li:not(:last-child)::after,
+  .timeline .arrows {
+    display: none;
+  }
+}
+
+/* FOOTER STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.page-footer {
+  position: fixed;
+  right: 0;
+  bottom: 20px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  color: black;
+  background: rgba(255, 255, 255, 0.65);
+}
+
+.page-footer a {
+  display: flex;
+  margin-left: 4px;
+}
